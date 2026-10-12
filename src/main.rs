@@ -1,30 +1,13 @@
+
+mod data_type;
+mod wallet;
+
 fn main() {
-    // Integer
-    let age: i32 = 25;
-    let year: i64 = 2026;
+    println!("Starting Rust Practice Project");
 
-    // Unsigned Integer
-    let count: u32 = 10;
+    data_type::run();
 
-    // Floating-point
-    let price: f64 = 99.99;
-    let rating: f32 = 4.5;
+    wallet::run();
 
-    // Boolean
-    let is_active: bool = true;
-    let is_logged_in: bool = false;
-
-    // Character
-    let grade: char = 'A';
-    let symbol: char = '#';
-
-    println!("Age: {}", age);
-    println!("Year: {}", year);
-    println!("Count: {}", count);
-    println!("Price: {}", price);
-    println!("Rating: {}", rating);
-    println!("Is Active: {}", is_active);
-    println!("Is Logged In: {}", is_logged_in);
-    println!("Grade: {}", grade);
-    println!("Symbol: {}", symbol);
+    println!("\nAll exercises completed!");
 }
