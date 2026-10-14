@@ -1,10 +1,10 @@
 pub struct Wallet {
     pub address: String,
-    pub balance: f64,
+    pub balance: i64,
 }
 
 impl Wallet {
-    pub fn new(address: String, balance: f64) -> Self {
+    pub fn new(address: String, balance: i64) -> Self {
         Self { address, balance }
     }
 
@@ -19,7 +19,7 @@ pub fn run() {
 
     let my_wallet = Wallet::new(
         String::from("demo_wallet_001"),
-        100.0,
+        50000,
     );
 
     my_wallet.display();
